@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MVP - Bootstrap Prototype - Mobile Web - Oliver Wyman Experiment</title>
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<!-- Bootstrap RWD enabled -->
+	<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+	<!-- link to Production CSS -->
+	<link href="http://www.cafewell.com/assets/mvp-7be561e0ad15dd8f0348a4fa8448f26a.css" rel="stylesheet">
+	<!-- Bootstrap CSS with RWD (responsive web design) ONLY, ideally this should be rolled up into bootstrap.css but kept it seperate for prototyping -->
+	<link href="css/bootstrap_responsive.css" rel="stylesheet"> 
+	<!-- CW Custom CSS for Mobile ONLY -->
+	<link href="css/cw_custom_mobile.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="brand-container pull-left"><a href="index.html" class="brand"><img alt="Caf&amp;eacute;Well" src="https://www.cafewell.com/assets/global_header/cw_log_white-396544c7376a355bba555f3846cb9ece.png"></a></div>
+				<div class="navigation-container pull-right">
+					<div class="cw_hdr_profile_subnav pull-right">
+						<ul class="nav">
+						<li class="profile_container"><a href="">OW_Attendee_01</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-dropshadow"></div>
+	</div>
+
+	<div class="cw_main_template_container">
+		<div class="container">
+			<div id="section_alerts">
+				<div id="alert_generic" class="alert hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Attention!</strong> A generic alert message...
+				</div>
+				<div id="alert_success" class="alert alert-success hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Success!</strong> You just did something awesome...
+				</div>
+				<div id="alert_report" class="alert alert-danger hide">
+					<button class="close" id="alert_report_close">x</button>
+					<strong>Opps!</strong> Something has gone terribly wrong...
+				</div>
+				<div id="alert_info" class="alert alert-info hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Update!</strong> Just thought you would like to know...
+				</div>
+			</div>
+			<div class="row cw_main_page_title_row">
+				<div class="span12">
+					<h1>Activity Complete!</h1>
+				</div>
+			</div>
+			<div class="cw_main_content_container">
+				<div class="row">	
+					<div class="span7 cw_ow_finished">
+						<img src="assets/index.png" alt="In alliance with Oliver Wyman" class="cw_ow_m_cobrand_logo" />
+						<p>Oliver Wyman and Caf&eacute;Well thank you for participating in this exclusive activity. Please visit the <a href="#">Summit Community on cafewell.com</a> to more activities and bonus material from the Summit.</p>
+						<div class="report_progress_form_container cw_ow_m_feedback_form">
+							<h4>Let us know what you think and you'll get a FREE reward</h4>
+							<form accept-charset="UTF-8" action="/users/password" class="new_user" id="new_user" method="post" novalidate>
+							<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="OtmXvEc/+/bL045uf9zamA8qu275xwjLEH89S8U1SiQ="></div>
+								<fieldset>
+									<div class="control-group">
+										<label>Did this activity enhance your time at the Health Innovation Summit?</label>
+										<div class="btn-group" data-toggle="buttons-radio">
+										  <button type="button" class="btn">Definitely</button>
+										  <button type="button" class="btn">Not Really</button>
+										</div>
+									</div>
+									<br />
+									<div class="control-group">
+										<label>Do you want to continue participating in similar activites?</label>
+										<div class="btn-group" data-toggle="buttons-radio">
+										  <button type="button" class="btn">Yes!</button>
+										  <button type="button" class="btn">No</button>
+										</div>
+									</div>
+									<br />
+									<div class="control-group">
+										<label>Did you like earning badges or climbing the Rankings to beat out the competition?</label>
+										<div class="btn-group" data-toggle="buttons-radio">
+										  <button type="button" class="btn">Badges</button>
+										  <button type="button" class="btn">Rankings</button>
+										</div>
+									</div>
+									<br />
+									<div class="control-group">
+										<label>Did you know you can now login to cafewell.com and gain access to bonus Summit materials?</label>
+										<div class="btn-group" data-toggle="buttons-radio">
+										  <button type="button" class="btn">Of course!</button>
+										  <button type="button" class="btn">Really?</button>
+										</div>
+									</div>
+									<div class="form-actions">
+										<a class="btn btn-primary pull-right" href="#" id="submit_feedback">Submit Feedback</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="cw_section hide cw_ow_m_activity_complete">
+							<div class="cw_section_inner">
+								<h3>Thank you for submitting your feedback</h3>
+								<p>To show our appreciation please login to cafewell.com and you will be notfied via email about how to claim your prize</p>
+								<div class="centered">
+									<a class="btn btn-primary" href="#" id="submit_feedback">Go To cafewell.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4 pull-right">
+						<div class="cw_right_col_well hide">
+							<div class="cw_right_col_well_inner">
+								<h5>Forgot your Caf&eacute;Well Account info?</h5>
+								<p>Please refer back to the email that we sent you when you checked in to the Oliver Wymen Health Innovation Summit.</p>
+								<p><em>If you have any questions please stop by our booth at the entrance to the Summit and we'll be more then happy to assist you.</em></p>
+							</div>
+						</div>
+						<div class="cw_right_col_well hide">
+							<div class="cw_right_col_well_inner">
+								<h5>Helpful Links</h5>
+								<ul class="unstyled">
+									<li><a href="http://www.oliverwyman.com/OWHIC-Summit.htm" target="_blank"><i class="icon-external-link"></i> Oliver Wymen Health Innovation Summit</a></li>
+									<li><a href="http://www.oliverwyman.com/media/Agenda_for_Web.pdf" target="_blank"><i class="icon-external-link"></i> Summit Agenda</a></li>
+									<li><a href="http://www.rosewoodhotels.com/en/crescenthotel/" target="_blank"><i class="icon-external-link"></i> Rosewood Crescent Hotel</a></li>
+									<li><a href="index.html"><i class="icon-external-link"></i> Visit the Summit Community on cafewell.com</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cw_right_col_ad hide">
+							<img src="assets/ads/banner_ad_300x250_example.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container cw_ftr_top">
+			<ul class="footer-links">
+				<li><a href="https://www.cafewell.com/pages/about"><strong>About CaféWell</strong></a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/welltok"><strong>About Welltok</strong></a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/zendesk_help" class="help" target="_blank">Help</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/terms">Terms of Use</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/privacy">Privacy Policy</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="http://facebook.com/cafewell" target="_blank"><span class="cw_social_btn"><i class="icon-facebook"></i></span></a>
+					<a href="http://twitter.com/cafewell" target="_blank"><span class="cw_social_btn"><i class="icon-twitter"></i></span></a></li>
+			</ul>
+		</div>
+		<div class="container cw_ftr_btm">
+			<p><strong>Copyright &copy; Welltok, Inc. 2010-2013</strong></p>
+			<p>The material on this web site is provided for educational purposes only, and is not to be used for medical advice, diagnosis or treatment.<br>Use of this site is subject to our terms of use and privacy policy.</p>
+		</div>
+	</div>
+	
+	<div class="modal hide fade" id="modal01">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4>Congratulations!</h4>
+		</div>
+		<div class="modal-body" id="personalization_complete">
+			<h4>Thank you for participating in this Exclusive Activity!</h4>
+			<div class="cw_well">
+				<div class="cw_m_badge_container">
+					<img src="assets/badges/badge_complete.gif" alt="To The Summit"/>
+					<p>You've earned:</p> 
+					<h4>To The Summit</h4>
+					<p>You finished this Exclusive Activity. Hope you enjoyed the Summit!</p>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+	<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		// FOR PROTOTYPE ONLY - all jQuery below is not for final production
+		$('#modal01').modal('show');
+		
+		$('#submit_feedback').click(function(){
+			$('.cw_ow_m_feedback_form').addClass('hide');
+			$('.cw_ow_m_activity_complete').removeClass('hide');
+			$('.cw_right_col_ad').removeClass('hide');
+		});
+	</script>
+</body>
+</html>

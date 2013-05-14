@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MVP - Bootstrap Prototype - Mobile Web - Oliver Wyman Experiment</title>
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<!-- Bootstrap RWD enabled -->
+	<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+	<!-- link to Production CSS -->
+	<link href="http://www.cafewell.com/assets/mvp-7be561e0ad15dd8f0348a4fa8448f26a.css" rel="stylesheet">
+	<!-- Bootstrap CSS with RWD (responsive web design) ONLY, ideally this should be rolled up into bootstrap.css but kept it seperate for prototyping -->
+	<link href="css/bootstrap_responsive.css" rel="stylesheet"> 
+	<!-- CW Custom CSS for Mobile ONLY -->
+	<link href="css/cw_custom_mobile.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="brand-container pull-left"><a href="index.html" class="brand"><img alt="Caf&amp;eacute;Well" src="https://www.cafewell.com/assets/global_header/cw_log_white-396544c7376a355bba555f3846cb9ece.png"></a></div>
+				<div class="navigation-container pull-right">
+					<div class="cw_hdr_profile_subnav pull-right">
+						<ul class="nav">
+							<li class="profile_container"><a href="">OW_Attendee_01</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-dropshadow"></div>
+	</div>
+
+	<div class="cw_main_template_container">
+		<div class="container">
+			<div id="section_alerts">
+				<div id="alert_generic" class="alert">
+					<button class="close" data-dismiss="alert">x</button>
+					<div class="clearfix" style="height: 30px; line-height: 30px; margin-top: 4px;">
+						<img src="assets/badges/badge_bring-it-on.gif" alt="Bring It On" class="pull-left" style="width: 30px; height: 30px; margin-right: 6px;" /> 
+						<p class="pull-left">You just started the <strong><a href="#">Daily Routine</a></strong> Streak!</p>
+					</div>
+				</div>
+				<div id="alert_generic" class="alert">
+					<button class="close" data-dismiss="alert">x</button>
+					<div class="clearfix" style="height: 30px; line-height: 30px; margin-top: 4px;">
+						<img src="assets/badges/badge_bring-it-on.gif" alt="Bring It On" class="pull-left" style="width: 30px; height: 30px; margin-right: 6px;" /> 
+						<p class="pull-left">You just extended your <strong><a href="#">Weekly BMI Report</a></strong> Streak!</p>
+					</div>
+				</div>
+				<div id="alert_success" class="alert alert-success hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Success!</strong> You just did something awesome...
+				</div>
+				<div id="alert_report" class="alert alert-danger hide">
+					<button class="close" id="alert_report_close">x</button>
+					<strong>Opps!</strong> Something has gone terribly wrong...
+				</div>
+				<div id="alert_info" class="alert alert-info hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Update!</strong> Just thought you would like to know...
+				</div>
+			</div>
+			<div class="row cw_main_page_title_row">
+				<div class="span12">
+					<h1>Exclusive Activity!</h1>
+				</div>
+			</div>
+			<div class="cw_main_content_container">
+				<div class="row">	
+					<div class="span7 cw_ow_m_dashboard">
+						<img src="assets/index.png" alt="In alliance with Oliver Wyman" class="cw_ow_m_cobrand_logo" />
+						<p>During the conference rack up as many steps and badges to see who will win!</p>
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab01" data-toggle="tab">Activity</a></li>
+							<li><a href="#tab02" data-toggle="tab">Ranking</a></li>
+							<li><a href="#tab03" data-toggle="tab">Badges</a></li>
+						</ul>
+						<div class="cw_ow_m_nav_dropdown">
+							<form>
+								<div class="control-group">
+									<div class="controls">
+										<select id="tab_nav_alternative" name="tab_nav_alternative">
+											<option value="activity" selected="selected" id="tab_nav_alternative_01">Activity</option>
+											<option value="ranking" id="tab_nav_alternative_01">Ranking</option>
+											<option value="badges" id="tab_nav_alternative_01">Badges</option>
+										</select>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab01">
+								<div class="row cw_conv_entry cw_conv_post_progress">
+									<div class="span7">
+										<div class="clearfix">
+											<button class="btn btn-primary pull-right">Refresh Steps</button>
+										</div>
+										<div class="report_progress_form_container">
+											<form>
+												<fieldset>
+													<p class="centered">My rank is <span>8</span> / 150 attendees</p>
+													<div class="pull-left">0</div>
+													<div class="pull-right">1000</div>
+													<br class="clearfix" />
+													<div class="progress progress-striped">
+													  <div class="bar" style="width: 25%;"></div>
+													</div>
+													<div class="cw_activity_preview_container">
+														<ul class="unstyled">
+															<li><i class="icon-user"></i>My Progress <span>250</span> Steps</li>
+															<li><i class="icon-screenshot"></i>Goal <span>1000</span> Steps</li>
+															<li><i class="icon-calendar"></i> Activity ends in <span>24 hrs</span></li>
+														</ul>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+										<div class="cw_well">
+											<div class="cw_m_badge_container">
+												<img src="assets/badges/badge_half-way_X.gif" alt="Half Way There"/>
+												<p>Your next badge is:</p> 
+												<h4>Half Way There</h4>
+												<p>You're half way to the final goal</p>
+											</div>
+										</div>
+										<div class="cw_section">
+											<div class="cw_section_inner">
+												<h3>The Summit Community</h3>
+												<p>You are already a part of the Oliver Wyman Health Innovation Summit Community on cafewell.com. Login to cafewell.com and see what fellow attendees are saying and get caught up on material from the Summit.</p>
+												<div class="clearfix">
+													<button class="btn btn-primary pull-right" type="button">Visit the Community</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab02">
+								<div class="cw_well">
+									<h3>Prizes!</h3>
+									<p>The top 3 ranked attendees will be announced at the end of the Summit and awarded a cash prize of $$. <em>So keeping tracking those steps and winning those badges!</em></p>
+								</div>
+								<table class="table table-bordered table-condensed">
+									<thead>
+									<tr>
+									<td>
+									<i class="icon-user"></i>
+									Attendees
+									</td>
+									<td>
+									<i class="icon-bar-chart"></i>
+									Steps
+									</td>
+									<td>
+									<i class="icon-group"></i>
+									Rank
+									</td>
+									</tr>
+									</thead>
+									<tbody><tr class="info" id="participant_3034">
+									<td>OW_Attendee_01 <i class="user_type_label">(you)</i>
+									<button id="personalize_name" class="btn btn-mini cw_btn-mini_task">Personalize Name</button>
+									</td>
+									<td>250.0</td>
+									<td>8</td>
+									</tr>
+									<tr>
+									<td><i class="icon-trophy"></i> OW_Attendee_08</td>
+									<td>999.0</td>
+									<td>1</td>
+									</tr>
+									<tr>
+									<td><i class="icon-trophy"></i> OW_Attendee_02</td>
+									<td>830.0</td>
+									<td>2</td>
+									</tr>
+									<tr>
+									<td><i class="icon-trophy"></i> OW_Attendee_03</td>
+									<td>810.0</td>
+									<td>3</td>
+									</tr>
+									<tr>
+									<td>OW_Attendee_04</td>
+									<td>740.0</td>
+									<td>4</td>
+									</tr>
+									<tr>
+									<td>OW_Attendee_05</td>
+									<td>730.0</td>
+									<td>5</td>
+									</tr>
+									<tr>
+									<td>OW_Attendee_07</td>
+									<td>650.0</td>
+									<td>6</td>
+									</tr>
+									<tr>
+									<td>OW_Attendee_09</td>
+									<td>640.0</td>
+									<td>7</td>
+									</tr>
+									<tr>
+									<td>OW_Attendee_01 <i class="user_type_label">(you)</i></td>
+									<td>250.0</td>
+									<td>8</td>
+									</tr>
+									<tr>
+									<td>OW_Attendee_10</td>
+									<td>150.0</td>
+									<td>9</td>
+									</tr>
+									<tr>
+									<td>OW_Attendee_11</td>
+									<td>138.0</td>
+									<td>10</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tab-pane fade" id="tab03">
+								<div class="cw_well">
+									<div class="cw_m_badge_container">
+										<img src="assets/badges/badge_half-way_X.gif" alt="Half Way There"/>
+										<p>Your next badge is:</p> 
+										<h4>Half Way There</h4>
+										<p>You're half way to the final goal</p>
+									</div>
+								</div>
+								<h3>My Badges</h3>
+								<div id="myCarousel" class="carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+											<div class="cw_m_badge_container">
+												<img src="assets/badges/badge_check-in.gif" alt="Checking In" />
+												<h4>Checking In</h4>
+												<p>Visited the Caf&eacute;Well booth during the Summit</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="cw_m_badge_container">
+												<img src="assets/badges/badge_bring-it-on.gif" alt="Bring It On" />
+												<h4>Bring It On</h4>
+												<p>Personalized your Ranking name</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="cw_m_badge_container">
+												<img src="assets/badges/badge_half-way_X.gif" alt="Half Way There" />
+												<h4>Half Way There</h4>
+												<p>Not earned yet...</p>
+												<!--<p>Your half way to the final goal</p>-->
+											</div>
+										</div>
+										<div class="item">
+											<div class="cw_m_badge_container">
+												<img src="assets/badges/badge_goal_X.gif" alt="You Made It" />
+												<h4>You Made It</h4>
+												<p>Not earned yet...</p>
+												<!--<p>Your made it to the final goal</p>-->
+											</div>
+										</div>
+										<div class="item">
+											<div class="cw_m_badge_container">
+												<img src="assets/badges/badge_complete_X.gif" alt="To the Summit" />
+												<h4>To the Summit</h4>
+												<p>Not earned yet...</p>
+												<!--<p>You completed this Exclusive Activity. Hope you enjoyed the Summit!</p>-->
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4 pull-right">
+						<!--<h4 class="cw_progress_bar_current_total" style="margin-bottom: 4px;"><i class="icon-trophy muted"></i>Level 12 <span class="pull-right">60%</span></h4>
+						<div class="progress progress-striped">
+							<div class="bar" style="width: 60%;"></div>
+						</div>-->
+						<div class="cw_right_col_well">
+							<div class="cw_right_col_well_inner">
+								<h5>Start the Day off Right</h5>
+								<div class="row cw_conv_entry" style="margin-bottom: 4px;">
+									<div class="avatar-container">
+										<div class="avatar expert">
+											<img alt="Kristin Burgess" class="avatar medium" src="https://cafewell-content.s3.amazonaws.com/Avatars%2F8746_d9202d2583b19c80a0fa.jpg.jpeg">
+											<p>Caféwell Coach</p>
+										</div>
+									</div>
+									<div class="entry-container small">
+										<p style="margin-top: 6px; margin-bottom: 0;">Coach <a href="http://www.cafewell.com/users/KristinBurgess">Kristin Burgess</a> has shared several scrumptious, healthy breakfast recipes and pictures straight from her own kitchen to give you a little inspiration early in the morning.</p>
+										<a href="http://www.cafewell.com/blog_posts/healthy-breakfast" class="btn btn-mini btn-primary pull-right">Learn More</a>
+									</div>
+								</div>
+								<table class="table table-condensed table-striped table-bordered">
+									<caption><strong>Serving Size Guide</strong></caption>
+									<thead>
+										<tr>
+											<th>Fruit</th>
+											<th>Serving Size</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Bananas</td>
+											<td>One, medium</td>
+										</tr>
+										<tr>
+											<td>Strawberries</td>
+											<td>Six</td>
+										</tr>
+										<tr>
+											<td>Plums</td>
+											<td>Two, small</td>
+										</tr>
+										<tr>
+											<td>Grapes</td>
+											<td>15</td>
+										</tr>
+										<tr>
+											<td>Apples</td>
+											<td>One, medium</td>
+										</tr>
+										<tr>
+											<td>Peach</td>
+											<td>One, medium</td>
+										</tr>
+										<tr>
+											<td>Orange or Apple Juice, <br /><span class="muted" style="font-size: x-small;">not from concentrate</span></td>
+											<td>One half cup</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="cw_right_col_well">
+							<div class="cw_right_col_well_inner">
+								<h5>Start Here to Grow Stronger this spring</h5>
+								<div class="row cw_conv_entry" style="margin-bottom: 4px;">
+									<div class="avatar-container">
+										<div class="avatar sponsored">
+											<img alt="Carrie Williams" class="avatar medium" src="https://cafewell-content.s3.amazonaws.com/Avatars%2FT0%2FXE%2FY1%2FRIXvUNaqA703KJc7tiFMM%3D.jpg">
+											<p>Coach</p>
+										</div>
+									</div>
+									<div class="entry-container small">
+										<p style="margin-top: 6px; margin-bottom: 0;">Not sure where to start with your new free weight regimen? CafeWell coach and trainer <a href="http://www.cafewell.com/users/CarrieWilliams">Carrie Williams</a> shares some great new exercises you can try:</p>
+									</div>
+								</div>
+								<ul class="unstyled">
+									<li><a href="http://www.cafewell.com/discussions/get-buff-without-weights-part-1-upper-body?origin_id=34&origin_type=DiscussionGroup">Upper Body Exercises</a></li>
+									<li><a href="http://www.cafewell.com/discussions/get-buff-without-weights-part-2-lower-body?origin_id=34&origin_type=DiscussionGroup">Lower Body Exercises</a></li>
+									<li><a href="http://www.cafewell.com/discussions/part-3-get-buff-without-weights-abs?origin_id=34&origin_type=DiscussionGroup">Ab Exercises</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cw_right_col_well">
+							<div class="cw_right_col_well_inner">
+								<h5>Spring for Super Seeds</h5>
+								<p style="margin-bottom: 0;"><strong>What are Super Seeds?</strong> Super seeds contain nutrients, including vitamins and minerals that are vital to developing and sustaining your health, lower blood pressure, reduce cholesterol and diminish other precursors to chronic health conditions, such as arthritis. </p>
+								<p style="margin-top: 10px; margin-bottom: 0;"><strong>Types of Super Seeds</strong></p>
+								<ul style="line-height: 12px;">
+									<li style="line-height: 12px;">Flaxseeds</li>
+									<li style="line-height: 12px;">Pumpkin Seeds</li>
+									<li style="line-height: 12px;">Sunflower Seeds</li>
+									<li style="line-height: 12px;">Sesame Seeds</li>
+									<li style="line-height: 12px;">Chia Seeds</li>
+								</ul>
+								<p style="margin-top: 10px;"><strong>What are the serving sizes of these super seeds?</strong> The National Institutes of Health (NIH) recommend four to five half ounce servings of seeds (the great thing is you can select which seeds you want to eat) each week.<br /><em>Sprinkle these seeds on your salads, bagels or marinades- or just eat them by the handful!</em></p>
+							</div>
+						</div>
+						<div class="cw_right_col_well">
+							<div class="cw_right_col_well_inner">
+								<h5>Attack Allergies Naturally</h5>
+								<p>Anti-inflammatory foods are a great way to nip allergy symptoms in the bud!</p>
+								<p>Here’s a list of the foods you can try- and great recipe ideas to use- to keep ahead of the pollen.</p>
+								<p style="margin-bottom: 0;"><strong>Lightly cooked dark, leafy greens</strong></p>
+								<ul style="line-height: 12px;">
+									<li style="margin-bottom: 4px; line-height: 16px;">Serving Size: 8-10 cups per day</li>
+									<li style="margin-bottom: 4px; line-height: 16px;">Try with... Eat kale, collard greens or chard sprinkled with sesame seeds</li>
+								</ul>
+								<p style="margin-bottom: 0; line-height: 14px;"><strong>Healthy Fats including avocado or heart-healthy oils such as olive or canola oil</strong></p>
+								<ul style="line-height: 12px;">
+									<li style="margin-bottom: 4px; line-height: 16px;">Serving Size: 5-7 servings per day</li>
+									<li style="margin-bottom: 4px; line-height: 16px;">Try with... Use olive oil as a dressing with a little vinegar and chop up some avocado to use as a healthy spread on toast</li>
+								</ul>
+								<p style="margin-bottom: 0;"><strong>Garlic, turmeric, curry and ginger</strong></p>
+								<ul style="line-height: 12px;">
+									<li style="margin-bottom: 4px; line-height: 16px;">Serving Size: Unlimited!</li>
+									<li style="margin-bottom: 4px; line-height: 16px;">Try with... Like spice? Sprinkle these herbs and spices and foods</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cw_right_col_well hide">
+							<div class="cw_right_col_well_inner">
+								<h5>Helpful Links</h5>
+								<ul class="unstyled">
+									<li><a href="http://www.oliverwyman.com/OWHIC-Summit.htm" target="_blank"><i class="icon-external-link"></i> Oliver Wymen Health Innovation Summit</a></li>
+									<li><a href="http://www.oliverwyman.com/media/Agenda_for_Web.pdf" target="_blank"><i class="icon-external-link"></i> Summit Agenda</a></li>
+									<li><a href="http://www.rosewoodhotels.com/en/crescenthotel/" target="_blank"><i class="icon-external-link"></i> Rosewood Crescent Hotel</a></li>
+									<li><a href="finished.html"><i class="icon-external-link"></i> End Activity - DEMO ONLY</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container cw_ftr_top">
+			<ul class="footer-links">
+				<li><a href="https://www.cafewell.com/pages/about"><strong>About CaféWell</strong></a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/welltok"><strong>About Welltok</strong></a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/zendesk_help" class="help" target="_blank">Help</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/terms">Terms of Use</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/privacy">Privacy Policy</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="http://facebook.com/cafewell" target="_blank"><span class="cw_social_btn"><i class="icon-facebook"></i></span></a>
+					<a href="http://twitter.com/cafewell" target="_blank"><span class="cw_social_btn"><i class="icon-twitter"></i></span></a></li>
+			</ul>
+		</div>
+		<div class="container cw_ftr_btm">
+			<p><strong>Copyright &copy; Welltok, Inc. 2010-2013</strong></p>
+			<p>The material on this web site is provided for educational purposes only, and is not to be used for medical advice, diagnosis or treatment.<br>Use of this site is subject to our terms of use and privacy policy.</p>
+		</div>
+	</div>
+
+	<!--<div class="modal hide fade" id="modal01">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4>The competition is heating up!</h4>
+		</div>
+		<div class="modal-body centered">
+			<img src="assets/badges/badge_half-way.gif" alt="Half Way There" style="width: auto; height: auto;" />
+			<h4><strong>OW_Attendee_02</strong> just earned the <strong>Half Way There</strong> badge!</h4>
+		</div>
+	</div>-->
+	
+	<!--<div class="modal hide fade" id="modal02">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4>Personalize your Rankings Name</h4>
+		</div>
+		<div class="modal-body" id="personalization_initial">
+			<h4><strong>About to take the lead?</strong><br />Let everyone know by personalizing your Rankings Name!</h4>
+			<form accept-charset="UTF-8" action="/users/password" class="new_user" id="new_user" method="post" novalidate>
+				<fieldset>
+					<p>Current Rankings Name: <strong>OW_Attendee_01</strong></p>
+					<div class="control-group">
+						<div class="controls"><input required type="text" placeholder="New Rankings Name"></div>
+					</div>
+					<div class="form-actions">
+						<button id="personalize_initial_btn" class="btn btn-primary pull-right">Personalize Rankings Name</button>
+					</div>
+				</fieldset>
+			</form>
+			<br />
+		</div>
+	</div>-->
+	
+	<div class="modal hide fade" id="modal01">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4>Something seem different?</h4>
+		</div>
+		<div class="modal-body" id="personalization_initial">
+			<h4>We’ve expanded your community!</h4>
+			<p>Now, you’ll see many more members around the new site. Enter your member ID for multiple chances to win $125 in Amazon gift cards and the most exclusive wellness resources on the web.</p>
+			<br />
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn-mini btn-inverse" data-dismiss="modal" aria-hidden="true">close</button>
+		</div>
+	</div>
+
+	<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		// FOR PROTOTYPE ONLY - all jQuery below is not for final production
+		//$('#modal01').modal('show');
+		
+		$('#personalize_name').click(function(){
+			$('#modal02').modal('show');
+			return false;
+		});
+		
+		$('#personalize_initial_btn').click(function(){
+			$('#personalization_initial').addClass('hide');
+			$('#personalization_complete').removeClass('hide');
+			return false;
+		});
+		
+		//Tabs alternative Select Menu		
+		$('#tab_nav_alternative').change(function () {
+			if ($(this).val()=='activity') {
+				$('#tab01').addClass('active');
+				$('#tab01').removeClass('fade');
+				$('#tab02, #tab03').addClass('fade');
+				$('#tab02, #tab03').removeClass('active');
+			} else if ($(this).val()=='ranking') {
+				$('#tab02').addClass('active');
+				$('#tab02').removeClass('fade');
+				$('#tab01, #tab03').addClass('fade');
+				$('#tab01, #tab03').removeClass('active');	
+			} else if ($(this).val()=='badges') {
+				$('#tab03').addClass('active');
+				$('#tab03').removeClass('fade');
+				$('#tab01, #tab02').addClass('fade');
+				$('#tab01, #tab02').removeClass('active');
+			} else {
+				return false;	
+			}
+		});
+	</script>
+</body>
+</html>

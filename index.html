@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MVP - Bootstrap Prototype - Mobile Web - Oliver Wyman Experiment</title>
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<!-- Bootstrap RWD enabled -->
+	<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+	<!-- link to Production CSS -->
+	<link href="http://www.cafewell.com/assets/mvp-7be561e0ad15dd8f0348a4fa8448f26a.css" rel="stylesheet">
+	<!-- Bootstrap CSS with RWD (responsive web design) ONLY, ideally this should be rolled up into bootstrap.css but kept it seperate for prototyping -->
+	<link href="css/bootstrap_responsive.css" rel="stylesheet"> 
+	<!-- CW Custom CSS for Mobile ONLY -->
+	<link href="css/cw_custom_mobile.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="brand-container pull-left"><a href="/" class="brand"><img alt="Caf&amp;eacute;Well" src="https://www.cafewell.com/assets/global_header/cw_log_white-396544c7376a355bba555f3846cb9ece.png"></a></div>
+			</div>
+		</div>
+		<div class="header-dropshadow"></div>
+	</div>
+
+	<div class="cw_main_template_container">
+		<div class="container">
+			<div id="section_alerts">
+				<div id="alert_generic" class="alert hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Attention!</strong> A generic alert message...
+				</div>
+				<div id="alert_success" class="alert alert-success hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Success!</strong> You just did something awesome...
+				</div>
+				<div id="alert_report" class="alert alert-danger hide">
+					<button class="close" id="alert_report_close">x</button>
+					<strong>Opps!</strong> Something has gone terribly wrong...
+				</div>
+				<div id="alert_info" class="alert alert-info hide">
+					<button class="close" data-dismiss="alert">x</button>
+					<strong>Update!</strong> Just thought you would like to know...
+				</div>
+			</div>
+			<div class="row cw_main_page_title_row">
+				<div class="span12">
+					<h1>Exclusive Activity!</h1>
+				</div>
+			</div>
+			<div class="cw_main_content_container">
+				<div class="row">	
+					<div class="span7 cw_ow_m_login">
+						<img src="assets/index.png" alt="In alliance with Oliver Wyman" class="cw_ow_m_cobrand_logo" />
+						<p>Oliver Wyman and Caf&eacute;Well have teamed up to bring attendees of the Health Innovation Summit an exclusive activity to...</p>
+						<div class="report_progress_form_container">
+							<h4>Login with your Caf&eacute;Well account and get stepping!</h4>
+							<form accept-charset="UTF-8" action="/users/password" class="new_user" id="new_user" method="post" novalidate>
+								<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="OtmXvEc/+/bL045uf9zamA8qu275xwjLEH89S8U1SiQ="></div>
+								<fieldset>
+									<div class="control-group"><div class="controls"><input id="user_email" name="user[email]" required type="text" placeholder="Username"></div></div>
+									<div class="control-group"><div class="controls"><input id="user_email" name="user[email]" required type="text" placeholder="Password"></div></div>
+									<div class="form-actions">
+										<a class="btn btn-primary pull-right" href="dashboard.html">Login</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="span4 pull-right">
+						<div class="cw_right_col_well">
+							<div class="cw_right_col_well_inner">
+								<h5>Forgot your Caf&eacute;Well Account info?</h5>
+								<p>Please refer back to the email that we sent you when you checked in to the Oliver Wymen Health Innovation Summit.</p>
+								<p><em>If you have any questions please stop by our booth at the entrance to the Summit and we'll be more then happy to assist you.</em></p>
+							</div>
+						</div>
+						<div class="cw_right_col_well">
+							<div class="cw_right_col_well_inner">
+								<h5>Helpful Links</h5>
+								<ul class="unstyled">
+									<li><a href="http://www.oliverwyman.com/OWHIC-Summit.htm" target="_blank"><i class="icon-external-link"></i> Oliver Wymen Health Innovation Summit</a></li>
+									<li><a href="http://www.oliverwyman.com/media/Agenda_for_Web.pdf" target="_blank"><i class="icon-external-link"></i> Summit Agenda</a></li>
+									<li><a href="http://www.rosewoodhotels.com/en/crescenthotel/" target="_blank"><i class="icon-external-link"></i> Rosewood Crescent Hotel</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container cw_ftr_top">
+			<ul class="footer-links">
+				<li><a href="https://www.cafewell.com/pages/about"><strong>About CaféWell</strong></a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/welltok"><strong>About Welltok</strong></a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/zendesk_help" class="help" target="_blank">Help</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/terms">Terms of Use</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://www.cafewell.com/pages/privacy">Privacy Policy</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="http://facebook.com/cafewell" target="_blank"><span class="cw_social_btn"><i class="icon-facebook"></i></span></a>
+					<a href="http://twitter.com/cafewell" target="_blank"><span class="cw_social_btn"><i class="icon-twitter"></i></span></a></li>
+			</ul>
+		</div>
+		<div class="container cw_ftr_btm">
+			<p><strong>Copyright &copy; Welltok, Inc. 2010-2013</strong></p>
+			<p>The material on this web site is provided for educational purposes only, and is not to be used for medical advice, diagnosis or treatment.<br>Use of this site is subject to our terms of use and privacy policy.</p>
+		</div>
+	</div>
+
+	<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		// FOR PROTOTYPE ONLY - all jQuery below is not for final production
+	</script>
+</body>
+</html>

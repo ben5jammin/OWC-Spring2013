@@ -1,0 +1,342 @@
+/* Custom CafeWell.com Twitter Bootstrap CSS Document */
+/* For Mobile Web use ONLY */
+/* Should ALWAYS load after bootstrap.css (Twitter Bootstrap default CSS file) and cw_custom.css, cw_custom_header.css, cw_custom_footer.css (any custom CW stylesheets) */
+/* Created By: Ben Kim on 1/9/2013 */
+/* Last Modified By: Ben Kim on 1/18/2013 */
+
+/* Mobile Overrides - Global
+-------------------------------------------------- */
+/* Framework */
+.cw_main_template_container {
+	min-width: 100%;
+	border-top: none;	
+}
+.cw_main_template_container .container {
+	padding: 0 10px;
+}
+/* Headings */
+.row.cw_main_page_title_row h1 {
+	padding: 0 0 4px 20px;	
+}
+/* Tabs */
+.nav.nav-tabs {
+	margin-bottom: 4px;	
+}
+.tab-content {
+	min-height: auto;
+}
+/* Tables */
+thead tr {
+	/* Theme - MVP */
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	background-color: #fcf8e3;
+	color: #c09853;	
+}
+/* Forms */
+fieldset {
+	padding-top: 20px;
+}
+.control-group {
+	margin-bottom: 0;	
+}
+.form-inline {
+	margin: 0;	
+}
+.cw_conv_post_progress .input-append {
+	margin: 0;
+	padding: 0;
+}
+.input-append input {
+	padding: 0 8px;
+	margin: 0;
+	height: auto;
+	max-width: 140px;
+	-webkit-border-radius: 15px 0 0 15px;
+	-moz-border-radius: 15px 0 0 15px;
+	border-radius: 15px 0 0 15px;	
+}
+.input-append .add-on:last-child, 
+.input-append .btn:last-child {
+	/* Theme - MVP */
+	font: 11px #FFF 'Avenir-Next-Regular', sans-serif;
+	text-transform: uppercase;
+	padding: 4px 8px 4px 6px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #eee;
+	-webkit-border-radius: 0 15px 15px 0;
+	-moz-border-radius: 0 15px 15px 0;
+	border-radius: 0 15px 15px 0;
+	text-shadow: 2px 2px 2px rgba(0,54,117,0.21);
+	background: #0092de;
+	background: -moz-linear-gradient(top, #a8cfed 0%, #0092de 80%);
+	background: -ms-linear-gradient(top, #a8cfed 0%, #0092de 80%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8cfed), color-stop(80%, #0092de));
+	background: -webkit-linear-gradient(top, #a8cfed 0%, #0092de 80%);
+	background: -o-linear-gradient(top, #a8cfed 0%, #0092de 80%);
+	background: linear-gradient(to bottom, #a8cfed 0%, #0092de 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A8CFED', endColorstr='#0092DE', GradientType=0);
+}
+/* Wells */
+.cw_well {
+	width: auto;
+	margin: 10px 4px 10px 0;
+}
+.cw_well .cw_m_badge_container img {
+	width: 54px;	
+}
+/* Carousel */
+.carousel-control {
+	width: 20px;
+	height: 80px;
+	margin-top: 0;
+	line-height: 65px;
+}
+.carousel-control.right, .carousel-control.left {
+	color: #FFF;
+	top: 0;	
+	/* Theme - MVP */
+	text-shadow: 2px 2px 2px rgba(38, 107, 38, 0.30);
+	border: 1px solid #EEE;
+	background: #84C129;
+	background: -moz-linear-gradient(top, #B0E35B 0%, #84C129 80%);
+	background: -ms-linear-gradient(top, #B0E35B 0%, #84C129 80%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B0E35B), color-stop(80%, #84C129));
+	background: -webkit-linear-gradient(top, #B0E35B 0%, #84C129 80%);
+	background: -o-linear-gradient(top #B0E35B 0%, #84C129 80%);
+	background: linear-gradient(to bottom, #B0E35B 0%, #84C129 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B0E35B', endColorstr='#84C129', GradientType=0);
+}
+.carousel-control.right {
+	right: 0;
+	-moz-border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+}
+.carousel-control.left {
+	left: 0;	
+	-moz-border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px;
+}
+.carousel-inner .item {
+	margin: 0 24px;
+	padding-top: 5px;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+	height: 75px;
+}
+/* Badge Container */
+.cw_m_badge_container h4 {
+	margin: 0 0 4px 0;
+}
+.cw_m_badge_container p {
+	margin: 0;
+	line-height: 14px;
+}
+.cw_m_badge_container img {
+	width: auto;
+	max-width: 74px;
+	height: auto;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+/* Report Progress */
+.report_progress_form_container {
+	padding-top: 18px;
+	margin-top: 10px;	
+}
+.report_progress_form_container p.centered  {
+	padding: 4px;
+	margin: -20px 0 0 0;
+	font-size: 16px;
+	background-color: #f4efeb;
+	display: block;
+	-moz-border-radius: 0 0 10px 10px;
+		-webkit-border-radius: 0 0 10px 10px;
+		border-radius: 0 0 10px 10px;
+}
+.report_progress_form_container p.centered  span {
+	font-weight: bold;
+	font-size: 24px;
+}
+.cw_activity_preview_container {
+	float: none;
+	width: auto;
+	padding-bottom: 8px;	
+}
+.cw_activity_preview_container li {
+	height: 18px;
+	padding: 0 0 4px 0;	
+}
+.cw_activity_preview_container li > i {
+	padding-top: 10px;
+	margin: 0;
+	color: #CCC;
+	font-size: 38px;
+}
+.progress.progress-striped {
+	margin-bottom: 8px;	
+}
+.progress {
+	background-image: url(../assets/progress_bar_divider-1px.gif);	
+}
+/* ----------------------------------------------- */
+/* Mobile Overrides - Header
+-------------------------------------------------- */
+.navbar-inner .container {
+	max-width: 1170px;	
+}
+.navbar .nav > li.profile_container > a {
+	padding-right: 4px;
+	background-image: none;
+	font-weight: normal;
+	font-size: 14px;
+}
+.header-dropshadow {
+	height: 8px;
+	background-position: bottom;	
+	background-color: white;
+}
+/* ----------------------------------------------- */
+/* Mobile Overrides - Footer
+-------------------------------------------------- */
+.footer {
+	background-position: left 63px;
+}
+.container cw_ftr_top {
+	width: 100%;
+}
+/* ----------------------------------------------- */
+/* Mobile Custom
+-------------------------------------------------- */
+.cw_ow_m_cobrand_logo {
+	margin-bottom: 8px;	
+}
+.cw_ow_m_login .report_progress_form_container {
+	padding-top: 0;
+	margin-bottom: 10px;
+}
+.cw_ow_m_login .form-actions {
+	padding: 0 0 6px 0;	
+}
+/* Forms - Feedback */
+.cw_ow_m_feedback_form {
+	padding-top: 0;
+	margin-bottom: 10px;
+}
+.cw_ow_m_feedback_form .form-actions {
+	padding: 10px 0 6px 0;	
+}
+.cw_ow_m_activity_complete .centered {
+	padding: 10px 0 6px 0;
+}
+.cw_ow_m_nav_dropdown {
+	display: none;
+}
+/* ----------------------------------------------- */
+
+@media (max-width: 979px) {
+	body {
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: 0;	
+	}
+	.alert {
+		margin-top: -8px;	
+	}
+	.tab-content table {
+		margin-top: 8px;	
+	}
+	/* Mobile Overrides - Header */
+	.navbar-fixed-top {
+		margin-bottom: 0;
+		margin-right: 0;		
+	}
+	.navbar-inner {
+		height: 40px;	
+	}
+	.brand {
+		padding: 0;	
+	}
+	.brand img {
+		margin: 0;
+		padding: 0 0 0 20px;
+		width: 80%;
+		height: auto;
+	}
+	.navbar .navigation-container {
+		width: auto;	
+	}
+	.cw_hdr_profile_subnav {
+		height: auto;		
+	}
+	.navbar .nav > li.profile_container {
+		margin-top: -5px;
+		padding: 2px 4px 2px 0;
+	}
+	
+	/* Mobile Overrides - Footer */
+	.footer-links {
+		width: auto;
+		font-size: 1em;
+		line-height: 1.8em;
+		margin-left: 10px;
+	}
+	.cw_ftr_btm {
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.cw_ftr_btm p {
+		width: auto;	
+	}
+	
+	/* Mobile - Custom */
+	.report_progress_form_container .span2.centered h2, 
+	.report_progress_form_container .span2.centered p {
+		display: inline;	
+	}
+	.report_progress_form_container .span2.centered p {
+		padding-top: 0;
+	}
+}
+@media screen 
+and (min-device-width: 320px) and (max-device-width: 480px), 
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+(device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+	/* mobile devices - not including iPad */
+	/* Tabs */
+	.nav.nav-tabs {
+		display: none;
+	}
+	.nav.nav-tabs > li > a {
+		font-size: 13px;
+	}
+	.cw_ow_m_nav_dropdown {
+		display: block;
+	}
+	.cw_ow_m_nav_dropdown select {
+		width: 100%;	
+	}
+	.cw_ow_m_nav_dropdown form {
+		margin-bottom: 4px;	
+	}
+	/* Footer */
+	.footer-links > li > a {
+		font-size: 0.8em;	
+	}
+	/* Headings */
+	.cw_section_inner h3 {
+		line-height: 24px;	
+	}
+	/* Tables */
+	table thead tr i {
+		display: none;	
+	}
+	/* Forms */
+	input, label, .btn-group {
+		width: auto;
+	}
+}
